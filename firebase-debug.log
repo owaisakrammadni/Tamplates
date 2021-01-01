@@ -1,0 +1,44 @@
+[debug] [2020-11-17T08:30:30.781Z] ----------------------------------------------------------------------
+[debug] [2020-11-17T08:30:30.783Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-17T08:30:30.783Z] CLI Version:   8.16.2
+[debug] [2020-11-17T08:30:30.783Z] Platform:      win32
+[debug] [2020-11-17T08:30:30.783Z] Node Version:  v12.13.1
+[debug] [2020-11-17T08:30:30.784Z] Time:          Tue Nov 17 2020 13:30:30 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-11-17T08:30:30.784Z] ----------------------------------------------------------------------
+[debug] [2020-11-17T08:30:30.784Z] 
+[debug] [2020-11-17T08:30:30.790Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-17T08:30:30.790Z] > authorizing via signed-in user
+[debug] [2020-11-17T08:30:30.790Z] [iam] checking project france-new for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-17T08:30:30.792Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/france-new:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-17T08:30:32.317Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 17 Nov 2020 08:30:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1171","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-17T08:30:32.318Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/france-new  
+ 
+[debug] [2020-11-17T08:30:32.765Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 17 Nov 2020 08:30:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'france-new'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-17T08:30:32.782Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/france-new/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-17T08:30:34.976Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 17 Nov 2020 08:30:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[france-new]: beginning deploy... 
+[debug] [2020-11-17T08:30:36.991Z] Error: EPERM: operation not permitted, scandir 'C:/Users/Student-PC/AppData/Local/Application Data'
+    at Object.readdirSync (fs.js:854:3)
+    at GlobSync._readdir (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:288:41)
+    at GlobSync._readdirInGlobStar (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:245:17)
+    at GlobSync._readdir (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:276:17)
+    at GlobSync._processReaddir (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:137:22)
+    at GlobSync._process (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:132:10)
+    at GlobSync._processGlobStar (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:380:10)
+    at GlobSync._process (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:383:10)
+    at GlobSync._process (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:383:10)
+    at GlobSync._process (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at new GlobSync (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:48:10)
+    at Function.globSync [as sync] (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:26:10)
+    at listFiles (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:19)
+    at _runDeploys (C:\Users\Student-PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:30:23)
+[error] 
+[error] Error: An unexpected error has occurred.
